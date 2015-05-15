@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- MapView layout and initial extent -->
+    <!-- mapoptions.MapType="Streets" mapoptions.ZoomLevel="19" mapoptions.center="48.4787404, 124.87150293" -->
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        mapoptions.center="48.4789018914509, 124.87439595829876" 
+        mapoptions.ZoomLevel="15">
+    </com.esri.android.map.MapView>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_dl"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="大类:"
+            android:textSize="20dp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/sp_dl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_xl"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="小类:"
+            android:textSize="20dp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/sp_xl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_dd"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="地点:"
+            android:textSize="20dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_dd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_qk"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="情况:"
+            android:textSize="20dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_qk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="经度:"
+            android:textSize="15dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_lat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_lon"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="纬度:"
+            android:textSize="15dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_lon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

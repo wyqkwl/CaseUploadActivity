@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        mapoptions.ZoomLevel="15"
+        mapoptions.center="48.4789018914509, 124.87439595829876" >
+    </com.esri.android.map.MapView>
+
+   
+
+</LinearLayout>
